@@ -15,6 +15,7 @@ The count data are loaded from the Bioconductor `airway` package.
 This project starts from the real gene-count matrix rather than FASTQ files. Therefore it performs count-level analysis and does not claim to run FastQC, MultiQC, alignment or featureCounts.
 
 **Scientific question**
+
 Does dexamethasone alter gene expression after controlling for baseline differences between donor/cell lines?
 
 Primary DESeq2 model:
