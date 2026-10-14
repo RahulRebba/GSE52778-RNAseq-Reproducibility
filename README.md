@@ -194,7 +194,7 @@ The generated `.db` file is excluded from Git because it can be rebuilt reproduc
 
 The repository also contains an Oracle-compatible schema design. It was not deployed to an Oracle server as part of this project.
 
-## Power BI dashboard
+**Power BI dashboard**
 
 The completed dashboard is:
 
