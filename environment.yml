@@ -1,0 +1,13 @@
+name: gse52778
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - python=3.12
+  - pandas
+  - sqlite
+  - git
+  - nextflow
+  - openjdk

@@ -1,0 +1,13 @@
+GSE52778 METADATA VALIDATION
+==================================
+Rows: 8
+Unique SRA runs: 8
+Unique GEO samples: 8
+Donors: 4
+Treatment counts: {'untrt': 4, 'trt': 4}
+
+STATUS: PASS
+- 8 unique samples
+- 4 complete untreated/treated donor pairs
+- No missing required metadata
+- No duplicate sample IDs

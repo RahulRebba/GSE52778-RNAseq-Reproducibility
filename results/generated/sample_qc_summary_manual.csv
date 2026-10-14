@@ -1,0 +1,5 @@
+"evidence","conclusion"
+"Library size","All eight samples have substantial library sizes; no catastrophic low-depth sample identified."
+"PCA","PC1 separates untreated and dexamethasone-treated samples; PC2 shows secondary donor structure."
+"Sample correlation","All pairwise correlations are high, approximately 0.961 to 0.989 off-diagonal."
+"Overall sample decision","Retain all eight samples; no sample has sufficient evidence for exclusion."

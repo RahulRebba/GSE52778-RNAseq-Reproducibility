@@ -1,0 +1,37 @@
+# ============================================================
+# GSE52778 project - files not intended for version control
+# ============================================================
+
+# R local/session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# renv installed package library
+# Keep renv.lock and renv/activate.R tracked
+renv/library/
+renv/staging/
+renv/cellar/
+
+# Analysis recovery checkpoints
+results/checkpoints/
+
+# Reproducibly generated SQLite databases
+results/generated/*.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Temporary / backup files
+*_backup.py
+*_backup.sql
+*.tmp
+*.bak
+*~
+
+# Operating-system artefacts
+.DS_Store
+Thumbs.db
+results/reference/
