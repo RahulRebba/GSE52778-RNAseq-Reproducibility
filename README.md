@@ -1,4 +1,5 @@
 **GSE52778 Gene Expression Data Quality, Reliability & Reproducibility Project**
+
 This project is a reproducible RNA-seq analysis and reporting workflow using the public GEO dataset GSE52778. It investigates how dexamethasone affects gene expression in human airway smooth-muscle cells while accounting for donor-specific baseline differences.
 
 The project combines Python metadata validation, R/Bioconductor analysis, DESeq2 differential-expression modelling, paired-vs-unpaired sensitivity analysis, GO Biological Process enrichment, SQLite relational data modelling, analytical SQL views, Power BI reporting, Git version control and `renv` dependency management.
