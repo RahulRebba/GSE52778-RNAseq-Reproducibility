@@ -1,10 +1,9 @@
-# GSE52778 Gene Expression Data Quality, Reliability & Reproducibility Project
-
+**GSE52778 Gene Expression Data Quality, Reliability & Reproducibility Project**
 This project is a reproducible RNA-seq analysis and reporting workflow using the public GEO dataset GSE52778. It investigates how dexamethasone affects gene expression in human airway smooth-muscle cells while accounting for donor-specific baseline differences.
 
 The project combines Python metadata validation, R/Bioconductor analysis, DESeq2 differential-expression modelling, paired-vs-unpaired sensitivity analysis, GO Biological Process enrichment, SQLite relational data modelling, analytical SQL views, Power BI reporting, Git version control and `renv` dependency management.
 
-## Dataset
+**Dataset**
 
 GEO accession: `GSE52778`
 
@@ -14,8 +13,7 @@ The count data are loaded from the Bioconductor `airway` package.
 
 This project starts from the real gene-count matrix rather than FASTQ files. Therefore it performs count-level analysis and does not claim to run FastQC, MultiQC, alignment or featureCounts.
 
-## Scientific question
-
+**Scientific question**
 Does dexamethasone alter gene expression after controlling for baseline differences between donor/cell lines?
 
 Primary DESeq2 model:
@@ -28,7 +26,7 @@ Sensitivity model:
 
 The `cell` term acts as a blocking factor because each donor contributes both an untreated and treated sample.
 
-## Workflow
+**Workflow**
 
 The validated core workflow is:
 
@@ -46,7 +44,7 @@ Main scripts:
 
 `scripts/05_load_sqlite.py`
 
-## Key results
+**Key results**
 
 The original count matrix contains 63,677 genes across 8 samples.
 
@@ -104,7 +102,7 @@ Significance overlap:
 
 This shows that treatment-effect estimates are highly stable, while donor adjustment improves statistical precision.
 
-## GO Biological Process enrichment
+**GO Biological Process enrichment**
 
 GO enrichment is performed separately for the 490 >=2-fold upregulated and 461 >=2-fold downregulated genes.
 
@@ -136,7 +134,7 @@ Major downregulated themes include cell projection and morphogenesis, signalling
 
 GO terms are hierarchical and overlapping and should not be interpreted as independent biological effects.
 
-## SQL data layer
+**SQL data layer**
 
 The project builds a relational SQLite reporting database from validated analysis outputs.
 
@@ -212,7 +210,7 @@ It contains four pages:
 
 The Power BI layer is used for reporting and visualisation. The scientific statistical analysis is performed in R and Python.
 
-## Reproducibility
+**Reproducibility**
 
 Conda is used for Python and command-line tools through:
 
@@ -238,7 +236,7 @@ and reported:
 
 `No issues found -- the project is in a consistent state.`
 
-## Running the project
+**Running the project**
 
 From the project directory, run:
 
@@ -256,7 +254,7 @@ Detailed Windows reproduction instructions are available in:
 
 `docs/REPRODUCE_ON_WINDOWS.md`
 
-## Important generated outputs
+**Important generated outputs**
 
 Key outputs are stored in:
 
@@ -292,7 +290,7 @@ Important files include:
 
 Local recovery checkpoints, installed R packages, reference benchmark files and generated SQLite databases are intentionally excluded from version control.
 
-## Repository structure
+**Repository structure**
 
 `data/` contains project metadata.
 
@@ -312,7 +310,7 @@ Local recovery checkpoints, installed R packages, reference benchmark files and 
 
 `renv.lock` records the R package environment.
 
-## Scope and limitations
+**Scope and limitations**
 
 This is a count-level RNA-seq reproducibility project. It does not claim to reproduce upstream FASTQ processing such as FastQC, MultiQC, read alignment or feature counting.
 
@@ -322,7 +320,7 @@ GO enrichment is an over-representation analysis and supports biological interpr
 
 The Power BI native scatter visual may apply data reduction when displaying large numbers of points. The R-generated volcano plot remains the complete analysis figure.
 
-## Data sources
+**Data sources**
 
 NCBI GEO:
 
